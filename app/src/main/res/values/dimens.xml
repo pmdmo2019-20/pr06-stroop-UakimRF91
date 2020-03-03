@@ -28,4 +28,6 @@
 
     <dimen name="player_selection_item_imgAvatar_size">40dp</dimen>
 
+    <dimen name="main_avatar_background_height">180dp</dimen>
+
 </resources>

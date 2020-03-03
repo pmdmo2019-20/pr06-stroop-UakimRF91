@@ -10,3 +10,7 @@ fun View.hideSoftKeyboard(): Boolean {
     ) as InputMethodManager
     return imm.hideSoftInputFromWindow(windowToken, 0)
 }
+
+fun View.invisibleUnless(condition: Boolean) {
+    visibility = if (condition) View.INVISIBLE else View.VISIBLE
+}

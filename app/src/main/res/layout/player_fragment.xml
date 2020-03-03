@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_avatar_background_height"
+        android:background="@color/primary"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <ImageView
+        android:id="@+id/imgActualPlayer"
+        android:layout_width="@dimen/main_avatar_size"
+        android:layout_height="@dimen/main_avatar_size"
+        android:src="@drawable/logo"
+        app:layout_constraintBottom_toTopOf="@+id/lblActualPlayer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <TextView
+        android:id="@+id/lblActualPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/player_selection_no_player_selected"
+        android:textColor="@color/white"
+        android:layout_marginBottom="@dimen/main_margin_2x"
+        android:textSize="@dimen/main_textSize_4x"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="@+id/imgActualPlayer"
+        app:layout_constraintStart_toStartOf="@+id/imgActualPlayer" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:drawableStart="@drawable/ic_player_edition_black_24dp"
+        android:drawableTint="@color/white"
+        android:text="@string/player_selection_btnEdit"
+        android:textColor="@color/white"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imgActualPlayer"
+        app:layout_constraintEnd_toStartOf="@+id/imgActualPlayer"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/lstPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/main_margin_1x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imgNoPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_player_add_black_48dp"
+        app:layout_constraintBottom_toBottomOf="@+id/lstPlayers"
+        app:layout_constraintEnd_toEndOf="@+id/lstPlayers"
+        app:layout_constraintStart_toStartOf="@+id/lstPlayers"
+        app:layout_constraintTop_toTopOf="@+id/lstPlayers"
+        app:tint="@color/playerOption" />
+
+    <TextView
+        android:id="@+id/lblNoPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/main_margin_half"
+        android:text="@string/player_selection_no_players_yet"
+        android:textColor="@color/playerOption"
+        app:layout_constraintEnd_toEndOf="@+id/imgNoPlayer"
+        app:layout_constraintStart_toStartOf="@+id/imgNoPlayer"
+        app:layout_constraintTop_toBottomOf="@+id/imgNoPlayer" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fabAddPlayer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="@dimen/main_margin_2x"
+        android:layout_marginBottom="@dimen/main_margin_2x"
+        android:backgroundTint="@color/accent"
+        android:src="@drawable/ic_player_add_black_24dp"
+        android:tint="@color/white"
+        app:elevation="@dimen/main_margin_1x"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:pressedTranslationZ="@dimen/main_margin_1x" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

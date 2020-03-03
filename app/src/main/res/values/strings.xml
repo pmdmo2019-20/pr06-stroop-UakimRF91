@@ -4,6 +4,7 @@
 
     <string name="help_title">Help</string>
     <string name="help_accept">Accept</string>
+    <string name="ok">OK</string>
 
     <string name="dashboard_title">Stroop</string>
     <string name="dashboard_help_description">To start playing you must create a player or select a player among existing, by clicking on player button in the dashboard</string>
@@ -52,6 +53,7 @@
     <string name="player_edition_mnuDelete">Delete player</string>
     <string name="player_edition_help_description">Here you can change the nickname and the avatar of the current player</string>
     <string name="player_edition_no_avatars_yet">No avatars yet</string>
+    <string name="player_edition_no_nickname_yet">Please enter a valid nickname</string>
 
     <string name="game_lblWordsLabel">Words</string>
     <string name="game_lblCorrectLabel">Correct</string>
@@ -75,7 +77,6 @@
     <string name="player_creation_title">Player creation</string>
     <string name="player_creation_error_inserting_player">Error inserting player</string>
 
-    <string name="ranking_item_gameMode">Game mode:</string>
     <string name="ranking_no_games_yet">No games yet</string>
     <string name="ranking_lblGameMode">Game mode</string>
     <string name="ranking_spnGameMode_all">All</string>
@@ -84,6 +85,7 @@
     <string name="ranking_title">Ranking</string>
     <string name="ranking_help_description">You can filter the game results by game mode</string>
 
+    <string name="ranking_item_gameMode">Game mode:</string>
     <string name="ranking_item_words">Words:</string>
     <string name="ranking_item_correct">Correct:</string>
     <string name="ranking_item_time">Minutes:</string>
@@ -92,5 +94,22 @@
     <string name="player_deletion_message">Are you sure to delete the current player? All their games will be deleted too</string>
     <string name="player_deletion_yes">Yes</string>
     <string name="player_deletion_no">No</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="settings_game_title">GAME</string>
+    <string name="settings_ranking_title">RANKING</string>
+    <string name="delete_title">Delete</string>
+
+    <string name="PLAYER_ID_ARGS" />
+    <string name="RANKING_ID_ARGS" />
+
+    <!-- Bundle keys from game to result -->
+    <string name="GAME_AVATAR_ID_PLAYER">GAME_AVATAR_ID_PLAYER</string>
+    <string name="GAME_NAME_PLAYER">GAME_NAME_PLAYER</string>
+    <string name="GAME_NUM_CORRECT">GAME_NUM_CORRECT</string>
+    <string name="GAME_NUM_INCORRECT">GAME_NUM_INCORRECT</string>
+    <string name="GAME_POINTS">GAME_POINTS</string>
+
 
 </resources>
